@@ -186,3 +186,139 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* Hero Section css */
+
+.main {
+    background-color: #141414;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.main__content {
+    width: 100%;
+}
+
+.main__content h1 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.text-highlight {
+    color: #0071f3;
+}
+
+.main__content p {
+    font-size: 2.5rem;
+    margin-top: 8px;
+    font-weight: 100;
+    color: #dbdbdb
+}
+
+.main__btn {
+    font-size: 1rem;
+    padding: 14px 32px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    text-decoration: none;
+}
+
+.main__btn::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #249f8b;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
+.main__img--container {
+    text-align: center;
+}
+
+#main__img {
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        .main__content h1 {
+            font-size: 2rem;
+            margin-top: 3rem;
+        }
+    
+        .main__content p {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+
+        .main__btn {
+            padding: 12px 36px;
+            margin: 2.5rem 0;
+        }
+    }
+}
+
+/* Images CSS */
+
