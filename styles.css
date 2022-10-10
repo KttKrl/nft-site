@@ -420,3 +420,17 @@
 .images__card:before {
 opacity: 0.2;
 }
+
+.images__card h2 {
+    position:absolute;
+    top: 350px;
+    left: 30px;
+    font-size:1.2rem;
+}
+
+.images__card p {
+    position:absolute;
+    top: 380px;
+    left: 30px;
+    font-size:0.8rem;
+}
