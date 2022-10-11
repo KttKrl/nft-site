@@ -327,6 +327,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 4rem;
 }
 .images h1 {
     color: #fff;
@@ -433,4 +434,37 @@ opacity: 0.2;
     top: 380px;
     left: 30px;
     font-size:0.8rem;
+}
+
+.images__card:hover {
+    transform: scale(1.01);
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .images h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .images h1 {
+        font-size: 1.2rem;
+    }
+    .images__card {
+        width: 300px;
+    }
+}
+
+/* Footer CSS */ 
+.footer__container {
+    background-color: #141414;
+    padding: 5 rem 0;
+    text-align: center;
+}
+
+.website__rights {
+    color: #fff;
 }
