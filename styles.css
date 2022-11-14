@@ -39,6 +39,10 @@
     font-size: 2.5rem;
 }
 
+#navbar__logo span {
+    color:#ffd3b1;
+}
+
 .navbar__menu {
     display: flex;
     align-items: center;
