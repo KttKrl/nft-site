@@ -96,6 +96,21 @@
     color: #2f58e0;
     transition: all 0.3s ease
 }
+.navbar__item ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  .navbar__item:hover > ul {
+    display: block;
+  }
+  
+  .navbar__item ul ul {
+    left: 100%;
+    top: 0;
+  }
 
 @media screen and (max-width: 960px) {
     .navbar__container {
